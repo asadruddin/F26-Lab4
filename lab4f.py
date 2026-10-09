@@ -5,5 +5,9 @@
 # Date:
 # Purpose: Practice variable number of arguments with *args
 # Usage: ./lab4f.py
-
-# Follow the instructions from readme.md.
+def get_initials(*args):
+    initials=[]
+    for name in args:
+        initials.append(name[0])
+    return initials 
+print(get_initials("alex","sandra","billy"))
